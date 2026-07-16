@@ -1,0 +1,71 @@
+---
+// src/components/Header.astro
+---
+<header class="sticky top-0 z-50 w-full border-b border-slate-900/80 bg-slate-950/80 backdrop-blur-md">
+  <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="#" class="text-white font-bold tracking-tight text-lg hover:text-indigo-400 transition-colors">
+      Callum<span class="text-indigo-500">.dev</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+      <a href="#about" class="hover:text-white transition-colors">About</a>
+      <a href="#skills" class="hover:text-white transition-colors">Skills</a>
+      <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+      <a 
+        href="mailto:your.email@example.com" 
+        class="px-4 py-2 bg-slate-900 border border-slate-800 text-slate-200 rounded-lg hover:bg-slate-800 hover:border-slate-700 transition-all text-xs cursor-pointer"
+      >
+        Contact
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button 
+      id="menu-toggle"
+      class="md:hidden text-slate-300 hover:text-white focus:outline-none cursor-pointer p-1"
+      aria-label="Toggle Menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div 
+    id="mobile-menu" 
+    class="hidden md:hidden border-t border-slate-900 bg-slate-950 px-6 py-6 space-y-4 text-slate-300 font-medium"
+  >
+    <a href="#about" class="block hover:text-white transition-colors py-2">About</a>
+    <a href="#skills" class="block hover:text-white transition-colors py-2">Skills</a>
+    <a href="#projects" class="block hover:text-white transition-colors py-2">Projects</a>
+    <a 
+      href="mailto:your.email@example.com" 
+      class="block text-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition-all text-sm font-semibold"
+    >
+      Contact
+    </a>
+  </div>
+</header>
+
+<script>
+  // Lightweight client-side JS for the mobile menu toggle
+  const toggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Close the menu automatically when a link is clicked
+    const links = menu.querySelectorAll('a');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+      });
+    });
+  }
+</script>

@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+	<main class="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-24">
+
+	<!-- Hero Section -->
+	<section class="min-h-[70vh] flex flex-col justify-center space-y-6">
+		<h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+			Frontend Developer building fast, accessible, and interactive web experiences.
+		</h1>
+		<p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+			Recent Creative Web Technologies graduate with a strong foundation in modern frontend development. I enjoy building responsive, accessible, and high-performance websites using modern JavaScript frameworks while writing clean, maintainable code.
+      	</p>
+	  	<div class="flex flex-wrap gap-4 pt-4">
+	  		<a href="#projects" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-500 transition-colors shadow-md cursor-pointer">
+			View projects
+			</a>
+			<a href="https://github.com/lolalolabob123" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-slate-900 border border-slate-800 text-slate-200 font-medium rounded-lg hover:bg-slate-850 hover:border-slate-700 transition-all cursor-pointer">
+			Github
+			</a>
+		</div>
+	</section>
+
+	<!-- About Me Section -->
+    <section id="about" class="grid md:grid-cols-3 gap-8 pt-8 border-t border-slate-900 scroll-mt-24">
+      <h2 class="text-2xl font-bold text-white">About Me</h2>
+      <div class="md:col-span-2 space-y-6 text-slate-300 leading-relaxed">
+        <p class="text-lg text-white font-medium">Hi, I'm Callum.</p>
+        <p>
+          I'm a frontend developer with a background in Creative Web Technologies, combining an understanding of both design and development to create user-focused web applications.
+        </p>
+        <p>
+          Throughout my degree, I developed a strong appreciation for building interfaces that not only look polished but are also responsive, accessible, and easy to use. I enjoy turning ideas and designs into clean, semantic code while focusing on maintainability, performance, and user experience.
+        </p>
+        <p>
+          I work primarily with <strong class="text-indigo-400">JavaScript, TypeScript, React, and Next.js</strong>, and I'm always looking to expand my knowledge by building projects that challenge me to learn new technologies and improve my problem-solving skills.
+        </p>
+        <p>
+          As a developer, I value writing code that is easy to understand, scalable, and accessible to all users. Whether I'm creating reusable React components, improving application performance, or refining small UI interactions, I enjoy finding simple solutions to complex problems.
+        </p>
+        <p>
+          I'm currently seeking opportunities as a <strong class="text-indigo-400">Junior Frontend Developer</strong>, where I can continue learning from experienced developers while contributing to meaningful projects.
+        </p>
+        <p class="text-slate-400 italic">
+          Outside of development, I enjoy gaming, which helps me stay creative and curious outside of programming.
+        </p>
+      </div>
+    </section>
+
+	<!-- Technical Skills Section -->
+    <section id="skills" class="grid md:grid-cols-3 gap-8 pt-8 border-t border-slate-900 scroll-mt-24">
+      <div>
+        <h2 class="text-2xl font-bold text-white sticky top-8">Skills & Technologies</h2>
+        <p class="text-slate-400 mt-2 text-sm leading-relaxed">
+          My technical toolkit focused on modern frontend engineering, clean system architecture, and inclusive user experiences.
+        </p>
+      </div>
+      
+      <div class="md:col-span-2 space-y-12">
+        <!-- Part 1: Core Competency Cards -->
+        <div class="grid sm:grid-cols-2 gap-6">
+          
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
+            <h3 class="text-lg font-semibold text-white mb-2">Frontend Development</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Building responsive, component-based user interfaces with React and Next.js. I focus on modular, reusable structures and strict state management.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
+            <h3 class="text-lg font-semibold text-white mb-2">Styling & UI</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Translating layout grids from Figma to CSS. I heavily rely on Tailwind CSS, Flexbox, and Grid to ensure fluid responsiveness across all viewports.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
+            <h3 class="text-lg font-semibold text-white mb-2">Web Accessibility</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Enforcing semantic HTML, screen-reader support, keyboard navigability, and WCAG accessibility standards from the first line of code.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
+            <h3 class="text-lg font-semibold text-white mb-2">Performance & SEO</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Optimizing bundle sizes, prioritizing asset loading, minimizing state redraws, and tracking Core Web Vitals to keep web apps feeling native.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors sm:col-span-2">
+            <h3 class="text-lg font-semibold text-white mb-2">Backend & APIs</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Experienced in writing lightweight backend code with Node.js and Express. I design RESTful APIs and integrate secure MongoDB architectures to feed data directly to frontend client applications.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Part 2: The Tech Stack Pill Grid -->
+        <div class="space-y-6 pt-6 border-t border-slate-900/60">
+          
+          <!-- Languages -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Languages</h4>
+            <div class="flex flex-wrap gap-2">
+              {['HTML5', 'CSS3', 'JavaScript (ES6+)', 'TypeScript'].map((tech) => (
+                <span class="px-3 py-1.5 text-xs font-medium text-slate-300 bg-slate-900/80 border border-slate-800/85 rounded-lg hover-glow transition-all cursor-default">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Frontend Frameworks -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Frontend</h4>
+            <div class="flex flex-wrap gap-2">
+              {['React', 'Next.js', 'Astro', 'Tailwind CSS', 'Sass'].map((tech) => (
+                <span class="px-3 py-1.5 text-xs font-medium text-slate-300 bg-slate-900/80 border border-slate-800/85 rounded-lg hover-glow transition-all cursor-default">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Backend</h4>
+            <div class="flex flex-wrap gap-2">
+              {['Node.js', 'Express', 'MongoDB', 'REST APIs'].map((tech) => (
+                <span class="px-3 py-1.5 text-xs font-medium text-slate-300 bg-slate-900/80 border border-slate-800/85 rounded-lg hover-glow transition-all cursor-default">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <!-- Dev Tools -->
+          <div class="space-y-3">
+            <h4 class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Tools</h4>
+            <div class="flex flex-wrap gap-2">
+              {['Git', 'GitHub', 'Vite', 'VS Code', 'npm', 'Figma', 'Postman'].map((tech) => (
+                <span class="px-3 py-1.5 text-xs font-medium text-slate-300 bg-slate-900/80 border border-slate-800/85 rounded-lg hover-glow transition-all cursor-default">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+	<!-- Project Section Placeholder -->
+    <section id="projects" class="pt-8 border-t border-slate-900 space-y-12 scroll-mt-24">
+      <div class="flex justify-between items-end">
+        <h2 class="text-2xl font-bold text-white">Featured Projects</h2>
+      </div>
+      
+      <div class="grid gap-12">
+        <!-- We will build and loop through your project cards here -->
+        <p class="text-slate-400">Project list coming soon...</p>
+      </div>
+    </section>
+	</main>
+</Layout>

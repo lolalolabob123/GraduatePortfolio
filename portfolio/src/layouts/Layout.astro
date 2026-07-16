@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro'
+---
+<!doctype html>
+<html lang="en" class="bg-slate-950 text-slate-100 scroll-smooth scroll-pt-20">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Callum's Portfolio</title>
+  </head>
+  <body class="min-h-screen">
+    <Header/>
+    <slot />
+  </body>
+</html>

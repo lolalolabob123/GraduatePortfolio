@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@utility hover-glow {
+    &:hover: 0 0 15px rgba(99, 102, 241, 0.15)
+    border-color: rgba(99, 102, 241, 0.4)
+}
