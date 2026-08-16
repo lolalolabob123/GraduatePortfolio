@@ -3,33 +3,41 @@ import Layout from '../layouts/Layout.astro'
 
 const projects = [
 	{
-	title: "TwinTiles Puzzle Game",
-	description: "A mobile logic puzzle game built with React Native and Expo. Players must solve grids by adhering to strict layput rules, requiring custom validation algorithms.",
-	tech: ["React Native", "Expo", "Typescript"],
-	highlights: [
-      "Engineered custom validation algorithms enforcing strict layout rules: no more than two tiles of the same color can sit directly next to each other, including those placed by the player.",
-      "Utilized persistent local storage to save game states, levels, and user progress across sessions.",
-      "Built a highly responsive, tactile mobile layout optimized for different screen ratios using Expo.",
-    ],
-	github: "https://github.com/lolalolabob123/PuzzleGameProject",
-  demo: "https://phenomenal-basbousa-07227e.netlify.app/"
+		title: "TwinTiles Puzzle Game",
+		description: "A mobile logic puzzle game built with React Native and Expo. Players must solve grids by adhering to strict layout rules, requiring custom validation algorithms.",
+		tech: ["React Native", "Expo", "TypeScript"],
+		highlights: [
+			"Engineered custom validation algorithms enforcing strict layout rules: no more than two tiles of the same color can sit directly next to each other, including those placed by the player.",
+			"Utilized persistent local storage to save game states, levels, and user progress across sessions.",
+			"Built a highly responsive, tactile mobile layout optimized for different screen ratios using Expo."
+		],
+		github: "https://github.com/lolalolabob123/PuzzleGameProject",
+		demo: "https://phenomenal-basbousa-07227e.netlify.app/"
 	},
 	{
-    title: "Kanban Project Management App",
-    description: "A full-stack workflow application inspired by Trello that allows users to create boards, manage tasks, and organize custom workflows.",
-    tech: ["React", "TypeScript", "Express", "MongoDB", "Tailwind CSS"],
-    highlights: [
-      "Implemented a seamless drag-and-drop workflow for interactive task management.",
-      "Built a robust REST API to handle seamless CRUD updates to tasks, columns, and boards.",
-      "Backed by a persistent MongoDB database to ensure user workflows are saved securely."
-    ],
-    github: "https://github.com/yourusername/kanban-app",
-    demo: "https://taupe-kelpie-921189.netlify.app/"
-  },
-  {
-    title: "Gardening Web App,
-    demo: "https://gardening-app-f7ee.onrender.com"
-  }
+		title: "Kanban Project Management App",
+		description: "A full-stack workflow application inspired by Trello that allows users to create boards, manage tasks, and organize custom workflows.",
+		tech: ["React", "TypeScript", "Express", "MongoDB", "Tailwind CSS"],
+		highlights: [
+			"Implemented a seamless drag-and-drop workflow for interactive task management.",
+			"Built a robust REST API to handle seamless CRUD updates to tasks, columns, and boards.",
+			"Backed by a persistent MongoDB database to ensure user workflows are saved securely."
+		],
+		github: "https://github.com/yourusername/kanban-app",
+		demo: "https://taupe-kelpie-921189.netlify.app/"
+	},
+	{
+		title: "Natureza Gardening PWA",
+		description: "A full-stack progressive web application for plant care, virtual garden management, and seed purchasing built in a collaborative team setting.",
+		tech: ["JavaScript", "Express", "MongoDB", "Node.js", "PWA"],
+		highlights: [
+			"Architected the entire backend server infrastructure with Node.js/Express, MongoDB models, session authentication, and RESTful API routes for dynamic plant data.",
+			"Engineered core frontend features, including interactive plant shop filtering, user garden grid management, cart management, and Service Worker offline capabilities.",
+			"Collaborated in a multidisciplinary team by integrating provided visual design assets and UI layouts into responsive, semantic HTML/CSS code."
+		],
+		github: "https://github.com/lolalolabob123/Gardening-App",
+		demo: "https://gardening-app-f7ee.onrender.com"
+	}
 ]
 ---
 
