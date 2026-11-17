@@ -286,7 +286,7 @@ const projects = [
                   <div class="mt-5 mx-auto w-full max-w-lg rounded-xl border border-slate-800 bg-slate-950/60 p-4">
                     <img
                       src={project.image}
-                      alt={'imageAlt' in project ? project.imageAlt : project.title}
+                      alt={project.imageAlt}
                       loading="lazy"
                       decoding="async"
                       class="mx-auto w-auto max-w-full h-auto max-h-72 rounded-lg object-contain"
@@ -318,7 +318,9 @@ const projects = [
               </ul>
 
               <!-- Project Action Links -->
-              <div class="flex items-center gap-4 pt-4 text-sm font-semibold border-t border-slate-900/60">
+              
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-3 pt-4 text-sm font-semibold border-t border-slate-900/60">
+
 
               {'playStore' in project && project.playStore && (
                 <a
