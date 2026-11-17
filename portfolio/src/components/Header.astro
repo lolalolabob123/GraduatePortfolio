@@ -22,11 +22,16 @@
     </nav>
 
     <!-- Mobile Menu Button -->
-    <button 
-      id="menu-toggle"
-      class="md:hidden text-slate-300 hover:text-white focus:outline-none cursor-pointer p-1"
-      aria-label="Toggle Menu"
-    >
+
+<button
+  id="menu-toggle"
+  type="button"
+  class="md:hidden text-slate-300 hover:text-white cursor-pointer p-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
@@ -50,22 +55,34 @@
   </div>
 </header>
 
+
 <script>
-  // Lightweight client-side JS for the mobile menu toggle
   const toggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('mobile-menu');
 
   if (toggle && menu) {
+    const setMenuOpen = (isOpen: boolean) => {
+      menu.classList.toggle('hidden', !isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute(
+        'aria-label',
+        isOpen ? 'Close navigation menu' : 'Open navigation menu'
+      );
+    };
+
     toggle.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      setMenuOpen(!isOpen);
     });
 
-    // Close the menu automatically when a link is clicked
-    const links = menu.querySelectorAll('a');
-    links.forEach(link => {
-      link.addEventListener('click', () => {
-        menu.classList.add('hidden');
-      });
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => setMenuOpen(false));
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false);
+      }
     });
   }
 </script>
