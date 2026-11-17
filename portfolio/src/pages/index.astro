@@ -12,31 +12,43 @@ const projects = [
 			"Built a highly responsive, tactile mobile layout optimized for different screen ratios using Expo."
 		],
 		github: "https://github.com/lolalolabob123/PuzzleGameProject",
-		demo: "https://phenomenal-basbousa-07227e.netlify.app/"
+		demo: "https://phenomenal-basbousa-07227e.netlify.app/",
+    playStore: "https://play.google.com/store/apps/details?id=com.callumcandy.twintiles",
+    status: "Published on Google Play",
+    image: "/images/twintiles-gameplay.png",
+    imageAlt: "TwinTiles mobile puzzle game showing a grid of blue and yellow tiles with gameplay controls",
 	},
 	{
 		title: "Kanban Project Management App",
 		description: "A full-stack workflow application inspired by Trello that allows users to create boards, manage tasks, and organize custom workflows.",
 		tech: ["React", "TypeScript", "Express", "MongoDB", "Tailwind CSS"],
-		highlights: [
-			"Implemented a seamless drag-and-drop workflow for interactive task management.",
-			"Built a robust REST API to handle seamless CRUD updates to tasks, columns, and boards.",
-			"Backed by a persistent MongoDB database to ensure user workflows are saved securely."
-		],
-		github: "https://github.com/yourusername/kanban-app",
-		demo: "https://taupe-kelpie-921189.netlify.app/"
+
+    highlights: [
+      "Implemented drag-and-drop task management using React and TypeScript, allowing users to organise and reorder tasks across columns.",
+      "Developed REST API endpoints with Node.js and Express to create, retrieve, update and delete boards, lists and tasks.",
+      "Integrated MongoDB for persistent data storage, separating backend functionality into routes, controllers and models."
+  ],
+
+		github: "https://github.com/lolalolabob123/TrelloClone",
+		demo: "https://taupe-kelpie-921189.netlify.app/",
+    image: "/images/kanban-board.png",
+    imageAlt: "Kanban project management application with To Do, In Progress and Completed columns, task cards and colour-coded priority labels",
 	},
 	{
 		title: "Natureza Gardening PWA",
 		description: "A full-stack progressive web application for plant care, virtual garden management, and seed purchasing built in a collaborative team setting.",
 		tech: ["JavaScript", "Express", "MongoDB", "Node.js", "PWA"],
-		highlights: [
-			"Architected the entire backend server infrastructure with Node.js/Express, MongoDB models, session authentication, and RESTful API routes for dynamic plant data.",
-			"Engineered core frontend features, including interactive plant shop filtering, user garden grid management, cart management, and Service Worker offline capabilities.",
-			"Collaborated in a multidisciplinary team by integrating provided visual design assets and UI layouts into responsive, semantic HTML/CSS code."
-		],
+    highlights: [
+      "Developed the Node.js and Express backend, implementing REST APIs, MongoDB integration and session-based authentication.",
+      "Built interactive shopping and garden-management features, including cart functionality and Service Worker caching.",
+      "Collaborated with a multidisciplinary team to integrate design assets into responsive HTML, CSS and JavaScript interfaces."
+    ],
+
 		github: "https://github.com/lolalolabob123/Gardening-App",
-		demo: "https://gardening-app-f7ee.onrender.com"
+		demo: "https://gardening-app-f7ee.onrender.com",
+    image: "/images/natureza-shop.png",
+    imageAlt: "Natureza gardening application displaying plant products, shopping-cart items, quantity controls and a calculated order total",
+
 	}
 ]
 ---
@@ -46,12 +58,19 @@ const projects = [
 
 	<!-- Hero Section -->
 	<section class="min-h-[70vh] flex flex-col justify-center space-y-6">
-		<h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
-			Frontend Developer building fast, accessible, and interactive web experiences.
-		</h1>
-		<p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
-			Recent Creative Web Technologies graduate with a strong foundation in modern frontend development. I enjoy building responsive, accessible, and high-performance websites using modern JavaScript frameworks while writing clean, maintainable code.
-      	</p>
+    <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white leading-tight">
+      Junior Software Developer building{" "}
+      <span class="text-indigo-400">
+        web and mobile applications.
+      </span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+      I'm a BSc (Hons) Creative Computing graduate specialising in React, TypeScript,
+      React Native and Node.js. I build responsive web applications, full-stack systems and mobile experiences,
+      including TwinTiles, an independently developed puzzle game published on Google Play.
+    </p>
+
 	  	<div class="flex flex-wrap gap-4 pt-4">
 	  		<a href="#projects" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-500 transition-colors shadow-md cursor-pointer">
 			View projects
@@ -63,29 +82,47 @@ const projects = [
 	</section>
 
 	<!-- About Me Section -->
-    <section id="about" class="grid md:grid-cols-3 gap-8 pt-8 border-t border-slate-900 scroll-mt-24">
-      <h2 class="text-2xl font-bold text-white">About Me</h2>
+    <section id="about"
+      class="grid md:grid-cols-3 gap-8 pt-8 border-t border-slate-900 scroll-mt-24"
+    >
+      <h2 class="text-2xl font-bold text-white">
+        About Me
+      </h2>
+
       <div class="md:col-span-2 space-y-6 text-slate-300 leading-relaxed">
-        <p class="text-lg text-white font-medium">Hi, I'm Callum.</p>
-        <p>
-          I'm a frontend developer with a background in Creative Web Technologies, combining an understanding of both design and development to create user-focused web applications.
-        </p>
-        <p>
-          Throughout my degree, I developed a strong appreciation for building interfaces that not only look polished but are also responsive, accessible, and easy to use. I enjoy turning ideas and designs into clean, semantic code while focusing on maintainability, performance, and user experience.
-        </p>
-        <p>
-          I work primarily with <strong class="text-indigo-400">JavaScript, TypeScript, React, and Next.js</strong>, and I'm always looking to expand my knowledge by building projects that challenge me to learn new technologies and improve my problem-solving skills.
-        </p>
-        <p>
-          As a developer, I value writing code that is easy to understand, scalable, and accessible to all users. Whether I'm creating reusable React components, improving application performance, or refining small UI interactions, I enjoy finding simple solutions to complex problems.
-        </p>
-        <p>
-          I'm currently seeking opportunities as a <strong class="text-indigo-400">Junior Frontend Developer</strong>, where I can continue learning from experienced developers while contributing to meaningful projects.
-        </p>
-        <p class="text-slate-400 italic">
-          Outside of development, I enjoy gaming, which helps me stay creative and curious outside of programming.
-        </p>
-      </div>
+
+<p class="text-lg text-white font-medium">
+  Hi, I'm Callum.
+</p>
+
+<p>
+  I'm a software developer and BSc (Hons) Creative Computing
+  graduate from Bath Spa University, where I achieved a 2:1.
+  I enjoy building practical applications that combine
+  thoughtful design with reliable functionality.
+</p>
+
+<p>
+  My experience spans frontend, backend and mobile development,
+  primarily using
+  <strong class="text-indigo-400">
+    React, TypeScript, React Native, Node.js and MongoDB.
+  </strong>
+  I've developed full-stack applications and independently
+  published TwinTiles, an Android puzzle game available
+  on Google Play.
+</p>
+
+<p>
+  I enjoy solving technical problems, learning new technologies
+  and improving the usability and maintainability of my projects.
+  I'm currently seeking junior software development opportunities
+  where I can contribute to a team and continue developing
+  my engineering skills.
+</p>
+
+</div>
+
     </section>
 
 	<!-- Technical Skills Section -->
@@ -104,35 +141,40 @@ const projects = [
           <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
             <h3 class="text-lg font-semibold text-white mb-2">Frontend Development</h3>
             <p class="text-slate-400 text-sm leading-relaxed">
-              Building responsive, component-based user interfaces with React and Next.js. I focus on modular, reusable structures and strict state management.
+              Building responsive, accessible interfaces using React,
+              TypeScript, HTML and CSS. Experienced with reusable
+              comppnents, state management, Tailwind CSS and translating
+              UI designs into functional applications.
             </p>
           </div>
 
           <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
-            <h3 class="text-lg font-semibold text-white mb-2">Styling & UI</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Translating layout grids from Figma to CSS. I heavily rely on Tailwind CSS, Flexbox, and Grid to ensure fluid responsiveness across all viewports.
-            </p>
-          </div>
-
-          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
-            <h3 class="text-lg font-semibold text-white mb-2">Web Accessibility</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Enforcing semantic HTML, screen-reader support, keyboard navigability, and WCAG accessibility standards from the first line of code.
-            </p>
-          </div>
-
-          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
-            <h3 class="text-lg font-semibold text-white mb-2">Performance & SEO</h3>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              Optimizing bundle sizes, prioritizing asset loading, minimizing state redraws, and tracking Core Web Vitals to keep web apps feeling native.
-            </p>
-          </div>
-
-          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors sm:col-span-2">
             <h3 class="text-lg font-semibold text-white mb-2">Backend & APIs</h3>
             <p class="text-slate-400 text-sm leading-relaxed">
               Experienced in writing lightweight backend code with Node.js and Express. I design RESTful APIs and integrate secure MongoDB architectures to feed data directly to frontend client applications.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
+            <h3 class="text-lg font-semibold text-white mb-2">
+              Mobile Development
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Developing cross-platform mobile applications with React Native,
+              Expo and TypeScript. Experienced in implementing interactive
+              interfaces, persistent application state and publishing Android
+              applications to Google Play.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-xl bg-slate-900/40 border border-slate-900 hover:border-slate-800 transition-colors">
+            <h3 class="text-lg font-semibold text-white mb-2">Development Practices</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Using Git and GitHub for version control, debugging,
+              application issues, and organising code into reusable
+              components and maintainable structures. Experienced
+              in testing functionality and deploying web and mobile
+              applications.
             </p>
           </div>
 
@@ -205,7 +247,7 @@ const projects = [
       
       <div class="space-y-16">
         {projects.map((project) => (
-          <div class="group grid md:grid-cols-5 gap-8 p-6 md:p-8 rounded-2xl bg-slate-900/20 border border-slate-900/60 hover:bg-slate-900/40 hover:border-indigo-500/30 transition-all duration-300">
+          <div class="group grid grid-cols-1 md:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl bg-slate-900/20 border border-slate-900/60 hover:bg-slate-900/40 hover:border-indigo-500/30 transition-all duration-300">
             
             <!-- Left Side: Basic Info & Tech Stack (Takes up 2/5 columns on desktop) -->
             <div class="md:col-span-2 flex flex-col justify-between space-y-6">
@@ -213,9 +255,30 @@ const projects = [
                 <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">
                   {project.title}
                 </h3>
+
+                {'status' in project && project.status && (
+                  <span class="inline-flex items-center gap-2 w-fit rounded-full border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400">
+                    <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+                    {project.status}
+                    </span>
+                )}
+
                 <p class="text-sm text-slate-400 leading-relaxed">
                   {project.description}
                 </p>
+
+                {'image' in project && project.image && (
+                  <div class="mt-5 mx-auto w-full max-w-lg rounded-xl border border-slate-800 bg-slate-950/60 p-4">
+                    <img
+                      src={project.image}
+                      alt={'imageAlt' in project ? project.imageAlt : project.title}
+                      loading="lazy"
+                      decoding="async"
+                      class="mx-auto w-auto max-w-full h-auto max-h-72 rounded-lg object-contain"
+                    />
+                    </div>
+                )}
+
               </div>
               
               <!-- Tech Tags -->
@@ -241,6 +304,32 @@ const projects = [
 
               <!-- Project Action Links -->
               <div class="flex items-center gap-4 pt-4 text-sm font-semibold border-t border-slate-900/60">
+
+              {'playStore' in project && project.playStore && (
+                <a
+                  href={project.playStore}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-1.5 text-emerald-400 hover:text-emerald-300 transition-colors"
+                >
+                Google Play
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7 17 17 7M7 7h10v10"
+                />
+                </svg>
+                </a>            
+              )}
+
                 <a 
                   href={project.github} 
                   target="_blank" 
